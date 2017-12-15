@@ -7,20 +7,7 @@ public class Filmueb {
 
         System.out.println(name+" "+version);
 
-
-        Task tasker = new Task();
-        ConsoleDataReader cdr = new ConsoleDataReader();
-
-        Movie movie1 = cdr.createMovie();
-        System.out.println(tasker.getInfo(movie1));
-
-        Series series1 = cdr.createTvSeries();
-        System.out.println(tasker.getInfo(series1));
-
-        Actor actor1 = cdr.createActor();
-        System.out.println(tasker.getInfo(actor1));
-
-
+        ApplicationController.mainLoop();
 
     }
 }

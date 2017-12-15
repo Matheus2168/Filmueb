@@ -1,4 +1,4 @@
-public class Actor {
+public class Actor extends MyData{
 
     private String firstName;
     private String lastName;

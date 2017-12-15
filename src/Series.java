@@ -1,4 +1,4 @@
-public class Series {
+public class Series extends MyData{
 
     private String title;
     private String genre;
