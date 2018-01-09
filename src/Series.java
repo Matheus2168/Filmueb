@@ -1,46 +1,13 @@
-public class Series extends MyData{
+public class Series extends Item{
 
-    private String title;
-    private String genre;
-    private String director;
     private int numberOfseasons;
     private int numberOfEpisodes;
-    private String description;
-    private double rating;
 
 
     public Series(String title, String genre, String director, int numberOfseasons, int numberOfEpisodes, String description, double rating) {
-        this.title = title;
-        this.genre = genre;
-        this.director = director;
+        super(title, genre, director, description, rating);
         this.numberOfseasons = numberOfseasons;
         this.numberOfEpisodes = numberOfEpisodes;
-        this.description = description;
-        this.rating = rating;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
     }
 
     public int getNumberOfseasons() {
@@ -59,19 +26,53 @@ public class Series extends MyData{
         this.numberOfEpisodes = numberOfEpisodes;
     }
 
+    @Override
+    public String getTitle() {
+        return super.getTitle();
+    }
+
+    @Override
+    public void setTitle(String title) {
+        super.setTitle(title);
+    }
+
+    @Override
+    public String getGenre() {
+        return super.getGenre();
+    }
+
+    @Override
+    public void setGenre(String genre) {
+        super.setGenre(genre);
+    }
+
+    @Override
+    public String getDirector() {
+        return super.getDirector();
+    }
+
+    @Override
+    public void setDirector(String director) {
+        super.setDirector(director);
+    }
+
+    @Override
     public String getDescription() {
-        return description;
+        return super.getDescription();
     }
 
+    @Override
     public void setDescription(String description) {
-        this.description = description;
+        super.setDescription(description);
     }
 
+    @Override
     public double getRating() {
-        return rating;
+        return super.getRating();
     }
 
+    @Override
     public void setRating(double rating) {
-        this.rating = rating;
+        super.setRating(rating);
     }
 }

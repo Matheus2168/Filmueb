@@ -1,4 +1,4 @@
-public class Actor extends MyData{
+public class Actor extends Item{
 
     private String firstName;
     private String lastName;
@@ -10,6 +10,8 @@ public class Actor extends MyData{
         this.lastName = lastName;
         this.citizenship = citizenship;
     }
+
+
 
     public String getFirstName() {
         return firstName;

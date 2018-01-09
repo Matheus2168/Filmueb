@@ -3,7 +3,7 @@ public class Task {
 
     String getInfo(Movie movie){
         if (isNull(movie))
-            return "referencja do pustego obiektu ! ";
+            return ""; //referencja do pustego obiektu
         else
         return  "==========\n" +
                 movie.getTitle()+"("+movie.getYear()+")\n"+
@@ -16,7 +16,7 @@ public class Task {
 
     String getInfo(Series series){
         if (isNull(series))
-            return "referencja do pustego obiektu ! ";
+            return ""; //referencja do pustego obiektu
         else
         return "==========\n" +
                 series.getTitle()+"\n"+
@@ -30,7 +30,7 @@ public class Task {
 
     String getInfo(Actor actor){
         if (isNull(actor))
-            return "referencja do pustego obiektu ! ";
+            return ""; //referencja do pustego obiektu
         else
         return "==========\n" +
                 actor.getFirstName()+" "+actor.getLastName()+" "+actor.getCitizenship()+"\n"+

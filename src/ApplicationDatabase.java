@@ -14,7 +14,7 @@ public class ApplicationDatabase {
 
 
 
-    public  void addToDatabase(MyData myObject){
+    public  void addToDatabase(Item myObject){
         if (myObject instanceof Movie){
             movies [nextEmptyIndex(movies)] = (Movie)myObject;
         }
@@ -30,7 +30,7 @@ public class ApplicationDatabase {
 
     }
 
-    private int nextEmptyIndex(MyData[] tab){
+    private int nextEmptyIndex(Item[] tab){
         int nextEmptyIndex = -1;
         for (int i = 0 ; i < tab.length ; i++){
             if (tab[i] == null && nextEmptyIndex == -1){
